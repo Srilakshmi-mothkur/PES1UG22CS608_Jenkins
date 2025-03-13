@@ -11,13 +11,13 @@ pipeline {
         stage('Build') {
             steps {
                 build 'PES1UG22CS608-1'
-                sh 'g++ ./main/new.cpp -o ne_exec'
+                sh 'g++ ./main/new.cpp -o new_exec'
                 sh 'chmod +x new_exec'
             }
         }
         stage('Test') {
             steps {
-                sh './new_exec'
+                sh './ew_exec'
             }
         }
         stage('Deploy') {
